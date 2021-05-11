@@ -1,4 +1,4 @@
-package com.example.batchprocessing;
+package com.example.batchprocessing.configuration;
 
 import javax.sql.DataSource;
 
@@ -20,6 +20,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
 import com.example.batchprocessing.entity.Person;
+import com.example.batchprocessing.item.PersonItemProcessor;
+import com.example.batchprocessing.listener.JobCompletionNotificationListener;
 
 // tag::setup[]
 @Configuration
