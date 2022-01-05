@@ -19,6 +19,18 @@ public class TaskletStepTest {
 	@Test
 	public void test1() throws Exception {
 		ts.setAllowStartIfComplete(false);
+		ts.setBeanName(null);
+		ts.setChunkListeners(null);
+		ts.setInterruptionPolicy(null);
+		ts.setJobRepository(null);
+		ts.setName(null);
+		ts.setStartLimit(0);
+		ts.setStepExecutionListeners(null);
+		ts.setStepOperations(null);
+		ts.setStreams(null);
+		ts.setTasklet(null);
+		ts.setTransactionAttribute(null);
+		ts.setTransactionManager(null);
 		
 		ts.afterPropertiesSet();
 	}
