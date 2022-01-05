@@ -26,7 +26,7 @@ public class Part1 {
 	
 	@Bean
     public Step step() {
-        return this.stepBuilderFactory.get("step1")
+        return stepBuilderFactory.get("step1")
                 .tasklet(new Tasklet() {
                     @Override
                     public RepeatStatus execute(StepContribution contribution,
@@ -36,11 +36,21 @@ public class Part1 {
                     }
                 }).build();
     }
-
+	 public Step step1() {
+		 return stepBuilderFactory.get("step2").tasklet(new Tasklet() {
+			
+			@Override
+			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+				 System.out.println("Hello, Batch!");
+				return RepeatStatus.FINISHED;
+			}
+		}).build();
+	 }
     @Bean
     public Job job() {
         return this.jobBuilderFactory.get("job")
                 .start(step())
+                .next(step1())
                 .build();
     }
 	
