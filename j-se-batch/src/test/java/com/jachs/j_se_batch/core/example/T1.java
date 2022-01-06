@@ -58,7 +58,7 @@ public class T1 {
 	
 	@Before
 	public void init() {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("dbcp.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("/db/dbcp.xml");
 
 		JdbcTemplate jdbcTemplate=ctx.getBean("jdbcTemplate",JdbcTemplate.class);
 		
