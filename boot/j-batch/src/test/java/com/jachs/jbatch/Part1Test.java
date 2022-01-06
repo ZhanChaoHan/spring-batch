@@ -11,7 +11,7 @@ import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.jachs.jbatch.configuration.Part1;
+import com.jachs.jbatch.configuration.part1.Part1;
 
 /***
  * 

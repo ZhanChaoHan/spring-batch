@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.jachs.j_se_batch.step.item.BatchRetryTemplateTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
