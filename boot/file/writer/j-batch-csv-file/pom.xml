@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>xml-file</artifactId>
+	<artifactId>j-batch-csv-file</artifactId>
 	<version>1.0</version>
-	<name>xml-file</name>
+	<name>j-batch-csv-file</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -25,15 +25,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>6.0.6</version>
 		</dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-oxm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.4.15</version>
-        </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

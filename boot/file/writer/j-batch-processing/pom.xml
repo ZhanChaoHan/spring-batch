@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>csv-file</artifactId>
+	<artifactId>j-batch-processing</artifactId>
 	<version>1.0</version>
-	<name>csv-file</name>
+	<name>j-batch-processing</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
